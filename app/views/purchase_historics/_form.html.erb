@@ -1,0 +1,41 @@
+<%= form_for(@purchase_historic) do |f| %>
+  <% if @purchase_historic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@purchase_historic.errors.count, "error") %> prohibited this purchase_historic from being saved:</h2>
+
+      <ul>
+      <% @purchase_historic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :client_id %><br>
+   <%= f.select :client_id, @purchase_historic.clienteAll %>
+  </div>
+  <div class="field">
+    <%= f.label :product_id %><br>
+    <%= f.select :product_id, @purchase_historic.productAll %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br>
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :createDate %><br>
+    <%= f.datetime_select :createDate %>
+  </div>
+  <div class="field">
+    <%= f.label :paidStatus %><br>
+    <%= f.check_box :paidStatus %>
+  </div>
+  <div class="field">
+    <%= f.label :discount %><br>
+    <%= f.text_field :discount %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

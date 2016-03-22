@@ -1,0 +1,2 @@
+module PurchaseHistoricsHelper
+end

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @client.name %>
+</p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @client.login %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @client.password %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @client.email %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @client.cpf %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @client.rg %>
+</p>
+
+<p>
+  <strong>Createdate:</strong>
+  <%= @client.createDate %>
+</p>
+
+<p>
+  <strong>Updatedate:</strong>
+  <%= @client.updateDate %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @client.comments %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>

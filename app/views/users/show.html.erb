@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @user.login %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @user.cpf %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @user.rg %>
+</p>
+
+<p>
+  <strong>Createdate:</strong>
+  <%= @user.createDate %>
+</p>
+
+<p>
+  <strong>Updatedate:</strong>
+  <%= @user.updateDate %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @user.comments %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

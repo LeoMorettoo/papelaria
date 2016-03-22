@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @purchase_historic.client.name %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @purchase_historic.product.name %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @purchase_historic.quantity %>
+</p>
+
+<p>
+  <strong>Createdate:</strong>
+  <%= @purchase_historic.createDate %>
+</p>
+
+<p>
+  <strong>Paidstatus:</strong>
+  <%= @purchase_historic.paidStatus %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @purchase_historic.discount %>
+</p>
+
+<%= link_to 'Edit', edit_purchase_historic_path(@purchase_historic) %> |
+<%= link_to 'Back', purchase_historics_path %>
